@@ -11,7 +11,7 @@ $featured = $con->query($sql);
 <head>
     <title>MAK ONLINE SHOP</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
@@ -45,16 +45,14 @@ $featured = $con->query($sql);
 </nav>
 
 <div class="col-md-2"></div>
-<div class="col-md-8">
+  <div class="col-md-8">
     <div class="row">
-        <h2 class="text-center">Top products</h2> <br> <br>
+        <h2 class="text-center">Top products</h2> <br/> <br>
         <?php
         while($product = mysqli_fetch_assoc($featured)):
-        
         ?>
-       
-    </div>
-     <div class="col-md-5">
+
+        <div class="col-md-5">
           <h4> <?= $product['title'];?> </h4>
           <img src="<?= $product['image'];?>" alt="<?= $product['title']; ?>" />
           <p class="lprice">Rs <?= $product['price'];?> </p>
@@ -63,7 +61,9 @@ $featured = $con->query($sql);
           </a>
         </div>
         <?php endwhile; ?>
-</div>
+    </div>
+   
+  </div>
 
 </body>
 </html>
