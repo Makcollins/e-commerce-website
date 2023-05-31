@@ -2,7 +2,7 @@
 
 $con = mysqli_connect('localhost','root');
 mysqli_select_db($con, 'makshop');
-$sql = "SELECT * FROM  products WHERE featured=1";
+$sql = "SELECT * FROM  products WHERE featured=2";
 $featured = $con->query($sql);
 
 ?>
@@ -35,9 +35,9 @@ $featured = $con->query($sql);
           Products
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="product-laptops.php">Laptops</a></li>
+          <li><a class="dropdown-item" href="products-laptops.php">Laptops</a></li>
           <li><hr class="dropdown-divider"> </li>
-          <li><a class="dropdown-item" href="product-phones.php">Phones</a></li>
+          <li><a class="dropdown-item" href="products-phones.php">Phones</a></li>
         </ul>
       </li>
     </ul>

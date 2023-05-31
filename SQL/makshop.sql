@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2023 at 08:43 AM
+-- Generation Time: May 31, 2023 at 11:16 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -42,7 +42,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `price`, `brandname`, `image`, `description`, `featured`) VALUES
-(1, 'Samsung Galaxy S23 Ultra 512GB - Black', 89500.00, 'Samsung', '/E-COMMERCE/images/samsung S23.jpg', '12GB RAM\r\nIP68 Water resistance\r\nArmor Aluminum Frame\r\nGorilla Glass Victus 2\r\nMaximum Refresh Rate: 120Hz\r\n6.8” Edge QHD+ Dynamic AMOLED 2X Display', 1);
+(1, 'Samsung Galaxy S23 Ultra 512GB - Black', 89500.00, 'Samsung', '/E-COMMERCE/images/samsung S23.jpg', '12GB RAM\nIP68 Water resistance\nArmor Aluminum Frame\nGorilla Glass Victus 2\nMaximum Refresh Rate: 120Hz\n6.8” Edge QHD+ Dynamic AMOLED 2X Display', 1),
+(2, 'Acer Aspire 3', 72000.00, 'ACER', '/E-COMMERCE/images/laptop2.png', 'Screen Size	15.6 Inches\r\nColor	Steel Gray\r\nHard Disk Size	1TB HDD\r\nCPU Model	Core i5-10400F\r\nRam Memory Installed Size	8 GB', 2),
+(3, 'SAMSUNG GALAXY Book 3 Laptop', 125000.00, 'SAMSUNG', '/E-COMMERCE/images/laptop3.jpg', '15.6\" screen,\r\n13th Gen Intel Core i7-1355U Processor / 16 GB / 512GB, Thin and Light, FHD Screen, Fingerprint Reader, HD Webcam, 2023 Model, NP750XFG-KB2US, Silver', 1);
 
 --
 -- Indexes for dumped tables
@@ -62,7 +64,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
